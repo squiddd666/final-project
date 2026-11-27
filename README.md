@@ -20,5 +20,3 @@ The prototype binds to loopback. Put it behind an HTTPS reverse proxy for deploy
 ### Automated API smoke test
 
 With the local demo server running, temporarily set ADMIN_EMAIL and ADMIN_PASSWORD for your seeded administrator, then run `node scripts/smoke.cjs`. It exercises all 36 routes with synthetic data and retains two synthetic account/profile pairs. Use a demo database, never a production or school database.
-
-- [Narrated demo run sheet](docs/DEMO.md)
