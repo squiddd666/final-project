@@ -15,3 +15,4 @@ The prototype binds to loopback. Put it behind an HTTPS reverse proxy for deploy
 
 - [Final project documentation (PDF)](docs/EduTrack_Documentation.pdf)
 - [Entity relationship diagram](docs/ERD.md)
+- [Project documentation (Markdown)](docs/PROJECT-DOCUMENTATION.md)
