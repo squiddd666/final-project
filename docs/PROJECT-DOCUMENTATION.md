@@ -149,7 +149,7 @@ Start the server, log in, create/read/update/delete a disposable student, trace 
 
 ### 8.2 Validation checks
 
-Six requests from the [Postman collection](../postman/EduTrack.postman_collection.json) passed via Newman against XAMPP MariaDB 10.4.32: login, student CRUD, and the missing-token check. Separate HTTP checks confirmed 400 for an invalid year level and 404 after deletion. This is not a full endpoint regression suite.
+Six requests from the [Postman collection](../postman/EduTrack.postman_collection.json) passed via Newman against XAMPP MariaDB 10.4.32: login, student CRUD, and the missing-token check. Separate HTTP checks confirmed 400 for an invalid year level and 404 after deletion. The Newman run was a demo subset. The separate [automated smoke test](../scripts/smoke.cjs) exercised all 36 routes against the same database and passed seven negative checks for authentication, permissions, validation, conflict, and missing records.
 
 ### 8.3 Data-flow explanation for presentation
 

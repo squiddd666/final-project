@@ -1,6 +1,6 @@
 # EduTrack | Genesis L. Narito, BSIT 4-A
 
-NestJS + TypeORM + MySQL prototype implementing the Lab 03-06 attendance and academic performance design. Requires Node.js 24 and MySQL 8.
+NestJS + TypeORM + MySQL prototype implementing the Lab 03-06 attendance and academic performance design. Requires Node.js 24 and MySQL 8 or XAMPP MariaDB (tested on 10.4.32).
 
 1. Run database/edutrack.sql in MySQL Workbench or the mysql client.
 2. Copy .env.example to .env. Set database credentials and a random JWT secret of at least 32 characters.
@@ -16,3 +16,9 @@ The prototype binds to loopback. Put it behind an HTTPS reverse proxy for deploy
 - [Final project documentation (PDF)](docs/EduTrack_Documentation.pdf)
 - [Entity relationship diagram](docs/ERD.md)
 - [Project documentation (Markdown)](docs/PROJECT-DOCUMENTATION.md)
+
+### Automated API smoke test
+
+With the local demo server running, temporarily set ADMIN_EMAIL and ADMIN_PASSWORD for your seeded administrator, then run `node scripts/smoke.cjs`. It exercises all 36 routes with synthetic data and retains two synthetic account/profile pairs. Use a demo database, never a production or school database.
+
+- [Narrated demo run sheet](docs/DEMO.md)
